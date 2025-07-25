@@ -15,9 +15,9 @@ public class D52Q5 {
         }
 
         //目盛り表示
-        int majormax = (max - 1) / 10 + 1; //目盛りの長さを計算
+        int majormax = (max - 1) / 5 + 1; //目盛りの長さを計算
         System.out.print("       ");
-        for (i = 0; i < majormax; i++) { //iを初期化
+        for (i = 0; i < majormax; i++) {
             System.out.print(majors.charAt(i % 5));
         }
         System.out.println();
@@ -25,7 +25,7 @@ public class D52Q5 {
         //グラフ表示
         for(i = 0; i < data.length; i++) {
             System.out.printf("%4d : ", data[i]);
-            int n = (data[i] - 1) / 10 + 1;
+            int n = (data[i] - 1) / 5 + 1;
             for ( int j = 0; j < n; j++) {
                 System.out.print('*');
             }
